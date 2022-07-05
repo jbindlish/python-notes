@@ -188,12 +188,42 @@ Code reuse is a very important part of programming, in any language. Increasing 
 Any statement that consists of a word followed by information in parenthesis is a function call. Some of these functions that we already learned are: print("Hello World") range(2,20) str(3) And much more. The words in front of the parentheses are function names, and the comma-separated values inside the parentheses are function arguments. In addition to the pre-defined functions, you can create your own functions using the def statement. def my_func(): print("GAS GAS GAS") my_func() Note that in this example, my_func() was called. Without this, nothing would happen, because you wouldn't use it. You must define functions before they are called, in the same way that you must assign variables before using them. For example, name = input() def welcome_message(nam): 
 print("Welcome, " +str(nam)) welcome_message(name) In this example, a function is defined to greet someone. One argument is the name of the person, who is greeted.
   
-#Function Arguments 
+###Function Arguments 
 
 Most functions that we have learned so far have 0 arguments. (Apart from my example where I had a clever use of nam and name) Here is an example with arguments: def who(action): print("Who " + action + "?") who(asked) There can also be multiple arguments within the function. For example, def multiply(x,y): print(x*y) multiply(4,2) A function argument can be used as a variable within the function definition, but it will raise an error if used outside of it. Technically, parameters are the variables in a function definition, and arguments are the values put into parameters when functions are called. 
 
+### Function Return
+
+Certain functions canreturn a value that can be used later. For example:
+
+def max(x,y):
+       if x>y:
+              return x
+       elif y>x:
+              return y
+ 
+z=max(5,8)
+
+In this example, 8 will be stored in z, because the function returned y, or 8. 
+
+Any statement after the return statement in a function is not executed. 
+
+Here is an example of some code utilizing the return function.
+
+s = input()
+
+def hashtagGen(text):
+	
+	text1 = text.replace(" ", "")
+	text = "#" + text1
+	return text
+
+print(hashtagGen(s))
 
 
+## Comments
+
+Comments are annotations in the code to make it easier to understand. It is made using a # symbol, and all text after it in a line is ignored by the code executor. 
 
 
 
