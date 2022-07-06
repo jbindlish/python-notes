@@ -235,16 +235,17 @@ Documentation Strings, or Docstrings, serve a similar purpose with comments.
 Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a 	paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what happens in the rest of the paragraph.
 '''
 
-# Functions as Objects
+## Functions as Objects
 
 Although they are defined differently than other objects, functions are just like them. They can be assigned and reassigned to variables, and later be referenced by them. 
 
 def return(stuff):
-	return(stuff)
 	
-print = return
+	return stuff
+	
+yeet = return
 
-print(return("hewwo"))
+print(yeet("hewwo"))
 
 The output of this is hewwo.
 
@@ -257,5 +258,28 @@ def do_twice(func, x, y):
 	return func(func(x,y), func(x,y))
 	
 
+## Modules
 
-	
+Modules are pieces of code that people have written to fulfill common tasks. The basic wa to use moduls is to add this to the top of the code.  
+
+import module_name
+
+Then, you can use module_name.var to acsess functions and values with the name var. 
+
+For example, this is how you use random numbers.
+
+import random
+print(random.randint(1,6))
+
+Here is code that simulates 2 dice. 
+
+import random
+random.seed(int(input())) #please don't touch this lane
+
+#generate the random values for every dice
+dice1 = random.randint(1,6)
+dice2 = random.randint(1,6)
+
+print(dice1)
+print(dice2)
+
