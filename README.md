@@ -117,7 +117,7 @@ print(num)
 
 This code returns [1,2,3,4]. Note that append is a method of the list class, and that is why there is a dot.
 
-# Len Function 
+### Len Function 
 
 The Len function is a way to count the number of items in a list. For example, 
 
@@ -130,7 +130,7 @@ items = [2, 4, 6, 8, 10, 12, 14]
 length = len(items) 
 print(length//2).
 
-# Insert function 
+### Insert function 
 
 The insert function lets you insert an item at any point in the list. 
 
@@ -146,7 +146,7 @@ Note 2: Note that insert has 2 parameters. (the method is like that)
 
 Note 3: everything after "is" was pushed right
 
-# index function 
+### index function 
 
 The index function finds the index of a list item. If there isn't that item in the list, the code raises a Value Error. 
 
@@ -225,5 +225,37 @@ print(hashtagGen(s))
 
 Comments are annotations in the code to make it easier to understand. It is made using a # symbol, and all text after it in a line is ignored by the code executor. 
 
+#comment here
+
+## Docstrings
+
+Documentation Strings, or Docstrings, serve a similar purpose with comments. 
+
+'''
+Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a 	paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what happens in the rest of the paragraph.
+'''
+
+# Functions as Objects
+
+Although they are defined differently than other objects, functions are just like them. They can be assigned and reassigned to variables, and later be referenced by them. 
+
+def return(stuff):
+	return(stuff)
+	
+print = return
+
+print(return("hewwo"))
+
+The output of this is hewwo.
+
+Functions can also be used as arguements of other functions.
+
+def add(a, b)
+	return a+b
+
+def do_twice(func, x, y):
+	return func(func(x,y), func(x,y))
+	
 
 
+	
