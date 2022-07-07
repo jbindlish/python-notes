@@ -283,3 +283,23 @@ dice2 = random.randint(1,6)
 print(dice1)
 print(dice2)
 
+There is another kind of import that can be used if you only need certain functions from a module.
+These take the form from module_name import var, and then var can be used as if it were defined normally in your code.
+
+For example, if you need to import pi from math, you could say from math import pi. If you need pi and sqrt, then you can say from math import pi, sqrt. 
+
+If you try to import a module that isn't available, you get an ImportError. 
+
+You can also import a module or an object under a different name using the as keyword. For example, this code imports cos as cosine.
+
+from math import cos as cosine
+print(math.cosine(4))
+
+Or, you could rename the module:
+
+import math as m
+print(m.sqrt(100))
+
+## The Standard Library and Pip
+
+There are 3 main types of modules you can use in Python, those you write yourself, those you install from external sources, and those that are preinstalled with Python. The last type is called the standard library
